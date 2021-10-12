@@ -121,7 +121,21 @@ def we_will_keep_our_promise():
     buzzer.note("Eb6 F6", duration=t)
     buzzer.note("F#6", duration=t*8)
     
+    buzzer.note("Eb5 F#5", duration=t)
+    buzzer.note("G#5", duration=t/2)
+    buzzer.note("Bb5", duration=t*1.5)
     
+    buzzer.note("C#6", duration=t)
+    buzzer.note("Eb6 Bb5", duration=t*1.5)
+    buzzer.note("Bb5 G#5", duration=t)
+    buzzer.note("F#5", duration=t/2)
+    buzzer.note("Eb5", duration=t*1.5)
+    buzzer.note("Bb5", duration=t)
+    buzzer.note("G#5", duration=t*2)
+    
+    buzzer.note("Eb5", duration=t/2)
+    buzzer.note("F#5", duration=t*1.5)
+    buzzer.note("F#5", duration=t*8)
         
 we_will_keep_our_promise()
 # ringtone()
