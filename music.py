@@ -1,5 +1,7 @@
 import buzzer
 import time
+
+buzzer.volume = 2
  
 # make a tone of 1500 Hz for 1/2 second, blocking
 def thoranee_gunsang():
@@ -136,8 +138,57 @@ def we_will_keep_our_promise():
     buzzer.note("Eb5", duration=t/2)
     buzzer.note("F#5", duration=t*1.5)
     buzzer.note("F#5", duration=t*8)
-        
-we_will_keep_our_promise()
+    
+def touhou_hisouten():
+    bpm = 120
+    t = 120/bpm
+    buzzer.note("Bb4 C5 D5 F5", duration=t/2)
+    buzzer.note("G5", duration=t*3)
+    buzzer.note("F5 G5 Bb5 A5", duration=t/2)
+    buzzer.note("G5 A5 G5", duration=t/6)
+    buzzer.note("F5", duration=t/2)
+    buzzer.note("G5", duration=t)
+    buzzer.note("D5 F5", duration=t/2)
+    buzzer.note("G5", duration=t*3)
+    buzzer.note("A5 Bb5 C6 D6", duration=t/2)
+    buzzer.note("D6", duration=t*1.5)
+    buzzer.note("C6 Bb5 A5", duration=t/2)
+    buzzer.note("G5", duration=t*3)
+    buzzer.note("F5 G5 Bb5 A5", duration=t/2)
+    buzzer.note("G5 A5 G5", duration=t/6)
+    buzzer.note("F5", duration=t/2)
+    buzzer.note("G5", duration=t)
+    for i in range(2):
+        buzzer.note("F5 C6", duration=t/2)
+        buzzer.note("G5", duration=t)
+    buzzer.note("F5 C5", duration=t/2)
+    buzzer.note("G5", duration=t*2)
+    
+    buzzer.note("Bb4 C5 D5 F5", duration=t/2)
+    buzzer.note("G5", duration=t*3)
+    buzzer.note("F5 G5 Bb5 A5", duration=t/2)
+    buzzer.note("G5 A5 G5", duration=t/6)
+    buzzer.note("F5", duration=t/2)
+    buzzer.note("G5", duration=t)
+    buzzer.note("D5 F5", duration=t/2)
+    buzzer.note("G5", duration=t*3)
+    buzzer.note("A5 Bb5 C6 D6", duration=t/2)
+    buzzer.note("D6", duration=t*1.5)
+    buzzer.note("C6 D6 Bb5 C6 A5 Bb5", duration=t/4)
+    buzzer.note("G5", duration=t*3)
+    buzzer.note("F5 G5 Bb5 A5", duration=t/2)
+    buzzer.note("Bb5 A5 Bb5", duration=t/6)
+    buzzer.note("C6", duration=t/2)
+    buzzer.note("D6", duration=t)
+    buzzer.note("C6 Bb5", duration=t/2)
+    buzzer.note("Bb5 A5 G5", duration=t/1.5)
+    buzzer.note("A5 D5", duration=t/1.5)
+    buzzer.note("A5", duration=t/2)
+    buzzer.note("A5 Bb5", duration=t/4)
+    buzzer.note("G5", duration=t*3.75)
+    
+touhou_hisouten()
+# we_will_keep_our_promise()
 # ringtone()
 # thoranee_gunsang()
 # mission_impossible()
